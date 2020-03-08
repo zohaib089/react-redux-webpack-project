@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-sass",
+  "name": "react-redux-sass-reactstrap",
   "version": "1.0.0",
-  "description": "A Starter Kit to get started on a UI Project with Reactjs, Redux and Sass.",
+  "description": "A Starter Kit to get started on a UI Project with Reactjs, Redux and Sass,webpack.",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
