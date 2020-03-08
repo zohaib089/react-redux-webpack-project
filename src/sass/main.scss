@@ -3,12 +3,15 @@ html,body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    color:#4d4d4d;
+    color:#b84141;
+    background-color: adjust-hue($color: #000000, $degrees: 0) !important;
     height: 100%;
+    // overflow-x: hidden;
 }
 
 .main{
     height: 100%;
+    background-image: url('../img/background.svg');
 }
 
 .header,.footer{
@@ -24,3 +27,68 @@ html,body{
     padding: 20px;
     box-sizing: border-box;
 }
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .auth-inner {
+    width: 450px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+  }
+  
+  .auth-wrapper .form-control:focus {
+    border-color: #167bff;
+    box-shadow: none;
+  }
+  
+  .auth-wrapper h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+  
+  .custom-control-label {
+    font-weight: 400;
+  }
+  .link{
+      margin-left: 10px;
+      color: grey;
+      padding-right: 7px;
+      text-decoration: none !important;
+  }
+
+  .list{
+      list-style-type: none;
+  
+      li{
+        border: 1.5px solid rgb(220, 227, 228);
+        border-radius: 20px;
+        float: right;
+padding-right: 2px;
+        
+        text-transform: uppercase;
+        font-size: large;
+      }
+  }
+
+  // Table
+  table {
+    table-layout: fixed;
+    td{
+    word-wrap: break-word;
+    }
+}
+
+    table th, table td {
+        overflow: hidden;
+    }
